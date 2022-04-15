@@ -43,30 +43,32 @@ where `s` is a complex variable equal to `σ + ti`. The series is only convergen
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-riemann-zeta
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var zeta = require( '@stdlib/math-base-special-riemann-zeta' );
+zeta = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/bundle.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/bundle.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.zeta;
+})();
+</script>
 ```
 
 #### zeta( s )
@@ -103,9 +105,14 @@ v = zeta( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var zeta = require( '@stdlib/math-base-special-riemann-zeta' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/bundle.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/bundle.js"></script>
+<script type="text/javascript">
+(function () {
 
 var s = linspace( -50.0, 50.0, 200 );
 
@@ -113,6 +120,11 @@ var i;
 for ( i = 0; i < s.length; i++ ) {
     console.log( 's: %d, ζ(s): %d', s[ i ], zeta( s[ i ] ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>

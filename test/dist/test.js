@@ -33,7 +33,7 @@ var zeta = require( './../../dist' );
 
 // FIXTURES //
 
-var data = require( './../..xtures/cpp/output.json' );
+var data = require( './../fixtures/cpp/output.json' );
 
 
 // TESTS //

@@ -65,7 +65,7 @@ where `s` is a complex variable equal to `σ + ti`. The series is only convergen
 ## Usage
 
 ```javascript
-import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@esm/index.mjs';
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.2.0-esm/index.mjs';
 ```
 
 #### zeta( s )
@@ -109,7 +109,7 @@ v = zeta( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@esm/index.mjs';
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.2.0-esm/index.mjs';
 
 var s = linspace( -50.0, 50.0, 200 );
 

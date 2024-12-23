@@ -58,38 +58,32 @@ where `s` is a complex variable equal to `σ + ti`. The series is only convergen
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-riemann-zeta
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zeta = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zeta = require( 'path/to/vendor/umd/math-base-special-riemann-zeta/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zeta;
-})();
-</script>
+var zeta = require( '@stdlib/math-base-special-riemann-zeta' );
 ```
 
 #### zeta( s )
@@ -126,14 +120,9 @@ v = zeta( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var zeta = require( '@stdlib/math-base-special-riemann-zeta' );
 
 var s = linspace( -50.0, 50.0, 200 );
 
@@ -141,11 +130,6 @@ var i;
 for ( i = 0; i < s.length; i++ ) {
     console.log( 's: %d, ζ(s): %d', s[ i ], zeta( s[ i ] ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -154,7 +138,88 @@ for ( i = 0; i < s.length; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/riemann_zeta.h"
+```
+
+#### stdlib_base_zeta( s )
+
+Evaluates the [Riemann zeta][zeta-function] function as a function of a real variable `s` (i.e., `t = 0`).
+
+```c
+double out = stdlib_base_zeta( 1.1 );
+// returns ~10.584
+```
+
+The function accepts the following arguments:
+
+-   **s**: `[in] double` input value.
+
+```c
+double stdlib_base_zeta( const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/riemann_zeta.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double s[] = { -50.0, -38.9, -27.8, -16.7, -5.6, 5.6, 16.7, 27.8, 38.9, 50.0 };
+
+    double v;
+    int i;
+    for ( i = 0; i < 1; i++ ) {
+        v = stdlib_base_zeta( s[ i ] );
+        printf( "zeta(%lf) = %lf\n", s[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

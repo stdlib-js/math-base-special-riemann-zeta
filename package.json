@@ -43,7 +43,7 @@
   "dependencies": {
     "@stdlib/constants-float64-ln-sqrt-two-pi": "^0.2.2",
     "@stdlib/constants-float64-max-ln": "^0.2.2",
-    "@stdlib/constants-float64-max-safe-nth-factorial": "^0.1.0",
+    "@stdlib/constants-float64-max-nth-factorial": "github:stdlib-js/constants-float64-max-nth-factorial#main",
     "@stdlib/constants-float64-ninf": "^0.2.2",
     "@stdlib/constants-float64-pinf": "^0.2.2",
     "@stdlib/constants-float64-sqrt-eps": "^0.2.2",

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-02)
+## Unreleased (2025-06-20)
 
 <section class="features">
 
@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 
+-   [`0b32938`](https://github.com/stdlib-js/stdlib/commit/0b32938e987737194fb3d9441deac9393b2f7410) - add missing `ln` dependency to `riemann-zeta` manifest
 -   [`0d53bc8`](https://github.com/stdlib-js/stdlib/commit/0d53bc83d3e0bc958aa43d6bf8759e36a586b9cb) - correct imports to use `max-nth-factorial` constant
 
 </section>
@@ -32,6 +33,7 @@
 
 <details>
 
+-   [`0b32938`](https://github.com/stdlib-js/stdlib/commit/0b32938e987737194fb3d9441deac9393b2f7410) - **fix:** add missing `ln` dependency to `riemann-zeta` manifest _(by Philipp Burckhardt)_
 -   [`3dd8cb3`](https://github.com/stdlib-js/stdlib/commit/3dd8cb379ea22c4a92d610d146cdd662d3187e27) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`0d53bc8`](https://github.com/stdlib-js/stdlib/commit/0d53bc83d3e0bc958aa43d6bf8759e36a586b9cb) - **fix:** correct imports to use `max-nth-factorial` constant _(by Karan Anand)_
 -   [`df1110f`](https://github.com/stdlib-js/stdlib/commit/df1110fd63db25a7adf9f78416bf0377742622e4) - **docs:** replace manual `for` loop in examples [(#6640)](https://github.com/stdlib-js/stdlib/pull/6640) _(by Harsh)_

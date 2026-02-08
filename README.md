@@ -65,7 +65,7 @@ where `s` is a complex variable equal to `σ + ti`. The series is only convergen
 ## Usage
 
 ```javascript
-import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@deno/mod.js';
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.3.1-deno/mod.js';
 ```
 
 #### zeta( s )
@@ -105,7 +105,7 @@ v = zeta( NaN );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@deno/mod.js';
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.3.1-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'

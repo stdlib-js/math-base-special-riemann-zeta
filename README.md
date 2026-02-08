@@ -65,6 +65,11 @@ where `s` is a complex variable equal to `σ + ti`. The series is only convergen
 ## Usage
 
 ```javascript
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-riemann-zeta/tags). For example,
+
+```javascript
 import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.3.1-esm/index.mjs';
 ```
 
@@ -110,7 +115,7 @@ v = zeta( NaN );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@v0.3.1-esm/index.mjs';
+import zeta from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-riemann-zeta@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
